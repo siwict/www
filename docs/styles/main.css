@@ -21,15 +21,18 @@ body {
 nav {
   position: sticky;
   top: 0;
-  background-color: var(--siw-blue); /*#003366*/
-  color: white;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.9)
+  );
+  color: var(--siw-blue);
   z-index: 1000; /* Ensures nav is above other content */
+  backdrop-filter: blur(5px);
 }
 
 nav #logo {
   height: 6rem;
   width: auto;
-  /* transition: all 0.3s ease 0.5s; */
 }
 
 nav #logo.scrolled {
@@ -54,26 +57,26 @@ nav #logo.scrolled {
 
 #nav-menu li a {
   text-decoration: none;
-  color: white;
+  color: var(--siw-blue);
   font-weight: bold;
   font-size: 1.2rem;
   padding: 0.5rem 1rem;
   display: inline-block;
   border-radius: 0.3rem;
-  /* transition: background-color 0.3s, color 0.3s; */
 }
 
 #nav-menu li a:hover {
-  background-color: var(--siw-yellow);
-  color: var(--siw-blue);
+  background-color: var(--siw-blue);
+  color: var(--siw-yellow);
 }
 
 #nav-menu li a.active {
   color: var(--siw-yellow);
+  background-color: var(--siw-blue);
 }
 
 #nav-menu li a.active:hover {
-  color: var(--siw-blue);
+  background-color: transparent;
 }
 
 /* Hamburger */
@@ -88,7 +91,7 @@ nav #logo.scrolled {
 
 /* Header */
 header {
-  background-image: url("../images/hero.png");
+  background-image: url("../images/hero1.webp");
   background-size: cover;
   background-position: center;
   height: 200px;
@@ -288,8 +291,13 @@ footer {
     display: flex;
   }
 
+  #nav-menu li a {
+    color: white;
+  }
+
   #hamburger {
     display: block;
+    color: var(--siw-blue);
   }
 
   table {

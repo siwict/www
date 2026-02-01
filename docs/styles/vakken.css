@@ -59,6 +59,10 @@ div.img {
   order: 2;
 }
 
+article[id] {
+  scroll-margin-top: 67px; /* Height nav-bar if small logo */
+}
+
 @media (max-width: 768px) {
   .txt-img {
     flex-direction: column;

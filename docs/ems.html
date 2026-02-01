@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICT @ ScheppersInstituut Wetteren</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="images/favicon.webp" type="image/x-icon">
+</head>
+
+<body>
+
+  <nav>
+    <div class="nav-container">
+      <a href="https://www.scheppers-wetteren.be/" target="_blank">
+        <img src="images/siw3.png" alt="Logo ScheppersInstituut Wetteren" id="logo">
+      </a>
+      <button id="hamburger">&#9776;</button>
+      <ul id="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="vakken.html">Vakken</a></li>
+        <li><a href="eindproject.html">Eindproject</a></li>
+        <li><a href="vervolg.html">Na 6ICT</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Energy Management System</h1>
+  </header>
+
+  <main>
+    <section class="main">
+      <article>
+        <p>
+          Onze eerste lichting 6ICT is dit jaar gestart met een ambitieus project: het ontwerpen van een eigen <strong>energiemanagementsysteem</strong>. Met dit <strong>EMS</strong> willen we op een slimme manier energieverbruik meten, analyseren en optimaliseren. We schetsen graag het verloop van dit leerrijke traject.
+        </p>
+        <br>
+        <p>
+          Om vat te krijgen op de complexe problematiek zijn we gestart met het maken van een conceptmap. Op basis daarvan hebben we het project opgesplitst in verschillende fases.
+        </p>
+        <img src="images/conceptmap2.webp" alt="Conceptmap EMS" title="Conceptmap EMS">
+        <p>
+          In de eerste fase hebben we scripts geschreven om <strong>data te verzamelen</strong>:
+        </p>
+        <ul>
+          <li>
+            We filteren gewenste data uit de seriële communicatie met de P1-poort van de digitale teller.
+          </li>
+          <li>
+            We vragen weergegevens op via een online weer-API.
+          </li>
+          <li>
+            De dynamische elektriciteitstarieven worden automatisch uit de inhoud van een online webpagina gehaald.
+          </li>
+        </ul>
+        <p>
+          In de tweede fase hebben we systeemservices (systemd-services) en systeemtaken (cronjobs) aangemaakt die ervoor zorgen dat de scripts automatisch op de juiste momenten worden uitgevoerd. Zolang ons systeem aan staat, wordt de data dus <strong>automatisch</strong> verzameld.
+        </p>
+        <br>
+        <p>
+          In fase drie hebben we een <strong>Linux-webserver</strong> opgezet met een RESTful API. 
+        </p>
+        <br>
+        <p>
+          Vervolgens ontwikkelden we een <strong>webbased dashboard</strong> gebruikmakende van HTML, CSS en JavaScript. De gebruiker kan in het dashboard een datum selecteren. Het dashboard neemt vervolgens contact op met de webserver, die de gevraagde data van die dag uit de databank haalt en doorstuurt. Het dashboard visualiseert deze gegevens ten slotte in een grafiek.
+        </p>
+        <br>
+        <img src="images/dashboard-vandaag.webp" alt="dashboard vandaag" title="dashboard-vandaag">
+        <br>
+        <img src="images/dashboard-historiek.webp" alt="dashboard historiek" title="dashboard-historiek">
+        <br>
+        <p>
+          In mei 2025 installeerden we ons EMS-systeem in de Gloriëtte, een bijgebouw op het schooldomein. 
+          Op de opendeurdagen van onze school konden de bezoekers daar ons EMS-systeem in werking zien.
+        </p>
+        <br>
+        <a href="images/projectposter-opendeurdagen2025.webp">
+          <img src="images/projectposter-opendeurdagen2025.webp" alt="projectposter opendeurdagen 2025" title="projectposter">
+        </a>
+      </article>
+    </section>
+    
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 ICT @ ScheppersInstituut Wetteren</p>
+  </footer>
+
+  <script src="js/nav.js"></script>
+
+</body>
+</html>

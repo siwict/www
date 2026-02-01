@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>ICT ontwerpt EMS</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: white;
+      color: #22406c;
+      margin: 0;
+      padding: 0;
+      width: 420mm;
+      height: 297mm;
+      box-sizing: border-box;
+    }
+
+    .poster {
+      padding: 20mm 30mm;
+      display: flex;
+      flex-direction: column;
+      gap: 15mm;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 3px solid #22406c;
+      padding-bottom: 10mm;
+    }
+
+    header img {
+      height: 60mm;
+    }
+
+    header h1 {
+      font-size: 40pt;
+      color: #22406c;
+    }
+
+    section {
+      padding: 10mm;
+      border-left: 10px solid #ffec1c;
+      background: #f9f9f9;
+    }
+
+    section h2 {
+      font-size: 20pt;
+      color: #22406c;
+      margin-bottom: 5mm;
+    }
+
+    section p {
+      font-size: 14pt;
+      line-height: 1.6;
+    }
+
+    .diagram-placeholder {
+      height: 100mm;
+      background: #eaeaea;
+      border: 2px dashed #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10mm;
+      color: #999;
+      font-size: 16pt;
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 12pt;
+      text-align: center;
+      color: #22406c;
+    }
+  </style>
+</head>
+<body>
+  <div class="poster">
+    <header>
+      <img src="siw3.png" alt="Schoollogo">
+      <h1>ICT ontwerpt EMS</h1>
+    </header>
+
+    <section>
+      <h2>Intro</h2>
+      <p>Met 6 Industriële ICT zochten we een uitdagend en maatschappelijk relevant project. Een project waarin we onze kennis en vaardigheden zouden nodig hebben om een maatschappelijk relevant probleem aan te pakken. We vonden dit in het ontwerpen van een eigen energiemanagementsysteem.</p>
+    </section>
+
+    <section>
+      <h2>Doelstelling</h2>
+      <p>We brengen de energieconsumptie in kaart en bekijken op welke manieren we de consumptiepatronen kunnen optimaliseren.</p>
+    </section>
+
+    <section>
+      <h2>Werkwijze</h2>
+      <p>Op de Raspberry Pi hebben we een Linux server opgezet. We verzamelen er data met behulp van Pythonscripts en Bash. Om de data toegankelijk te maken via het schoolnetwerk hebben we een RESTful API opgezet met Python. De frontend is opgebouwd met HTML en CSS. Voor het opvragen en visualiseren van de data maken we gebruik van JavaScript.</p>
+      <div class="diagram-placeholder">Hier komt een blokdiagram</div>
+    </section>
+
+    <section>
+      <h2>Toekomstvisie</h2>
+      <p>Ons energiemanagementsysteem is zopas in gebruik genomen in dit gebouw. Volgend schooljaar willen we met 6ICT de opbouw van het huidig systeem bestuderen en bijsturen. Vervolgens willen we de installatie en mogelijkheden uitbreiden. We denken aan:
+        <ul>
+          <li>Energieproductie met zonnepanelen</li>
+          <li>Slim sturen van een autolader</li>
+          <li>Opzetten van een waarschuwingssysteem</li>
+          <li>…</li>
+        </ul>
+      </p>
+    </section>
+
+    <section>
+      <h2>Vragen</h2>
+      <p>Heb je interesse in ons project of de richting, spring dan gerust even binnen in ons vaklokaal B129.</p>
+    </section>
+
+    <footer>
+      Industriële ICT - Scheppersinstituut Wetteren
+    </footer>
+  </div>
+</body>
+</html>
