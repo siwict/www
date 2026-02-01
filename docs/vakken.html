@@ -13,7 +13,7 @@
 <body>
   <nav>
     <div class="nav-container">
-      <a href="https://www.scheppers-wetteren.be/" target="_blank">
+      <a href="index.html">
         <img src="images/siw3.png" alt="Logo ScheppersInstituut Wetteren" id="logo">
       </a>
       <button id="hamburger">&#9776;</button>
@@ -144,9 +144,9 @@
               <td>6</td>
             </tr>
             <tr class="link-row">
-              <td><a href="#automatisering">Stage</a></td>
-              <td>nee</td>
-              <td>ja</td>
+              <td><a href="#stage">Stage</a></td>
+              <td>2 w</td>
+              <td>2 w</td>
             </tr>
           </tbody>
           <tfoot>
@@ -171,10 +171,12 @@
           <div class="txt-img" id="cont-prog">
             <div class="txt">
               <p>
-                In het vak <strong>Programmeertalen</strong> leer je in 5ICT gestructureerd programmeren met Python. 
-                Je maakt kennis met Linux Shellcommando's en leert deze combineren tot kleine scripts. 
-                In 6ICT maak je kennis met object geöriënteerde programmeertechnieken en de mogelijkheden van <abbr
-                title="Artificiële Intelligentie">AI</abbr>.
+                In het vak <strong>Programmeertalen</strong> leer je gestructureerd programmeren met Python.
+                In 5ICT leer je de basisconcepten van programmeren: werken met variabelen, selecties, lussen en functies.
+                Het is geen saaie theorie, je past alles meteen toe in kleine oefeningen. 
+                Fouten maken mag, want zo leer je het snelst bij!
+                In 6ICT bouwen we verder op de basis. De oefeningen worden groter en uitdagender. 
+                Je leert werken met verschillende datastructuren en je maakt kennis met object geöriënteerd programmeren en de mogelijkheden van <abbr title="Artificiële Intelligentie">AI</abbr>.
               </p>
             </div>
             <div class="img">
@@ -189,20 +191,14 @@
             <div class="txt">
               <p>
                 De kennis en vaardigheden die je aanleert in het vak programmeertalen pas je in het vak
-                <strong>Microcontrollers</strong> meteen toe in leuke projecten, 
-                waarbij je zelf oplossingen bouwt - van idee tot werkend resultaat! In eerste instantie werk je met de 
-                <a
-                  href="https://www.raspberrypi.com/products/raspberry-pi-pico-2/" target="_blank">Raspberry Pi
-                  Pico</a>. 
-                In functie van grotere projecten schakel je later eventueel over op een klassieke
-                <a
-                  href="https://www.raspberrypi.com/products/raspberry-pi-5/" target="_blank">Raspberry Pi</a>. 
-                Je verkent de mogelijkheden van <abbr title="Internet of Things">IoT</abbr>-toepassingen. 
-                Je leert niet alleen hoe de toestellen functioneren, 
-                maar ook hoe je ze kunt aansturen met basiselektronica en sensoren.
+                <strong>Microcontrollers</strong> meteen toe in leuke projecten,
+                waarbij je zelf oplossingen bouwt - van idee tot werkend resultaat!
+                De meeste projecten bouw je met <a href="https://www.arduino.cc/" target="_blank">Arduino</a>.
+                In 6ICT verken je de mogelijkheden van <abbr title="Internet of Things">IoT</abbr>-toepassingen.
+                Je leert niet alleen hoe de toestellen functioneren, maar ook hoe je ze kunt aansturen met basiselektronica en sensoren.
               </p>
               <p>
-                In 6ICT sluit je af met een knaller: 
+                Afsluiten doe je met een knaller: 
                 een <a href="eindproject.html">eindproject</a> 
                 dat je zelf ontwerpt en verdedigt voor een onafhankelijke jury. 
                 Hiervoor krijg je ruim de tijd tijdens de lessen, 
@@ -211,7 +207,10 @@
               </p>
             </div>
             <div class="img">
-              <img src="images/rp-pico.webp" alt="Aan de slag met Raspberry Pi Pico">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/arduino-big.webp">
+                <img src="images/arduino-small.webp" alt="Aan de slag met Arduino.">
+              </picture>
             </div>
           </div>
         </article>
@@ -240,17 +239,19 @@
                 Cyber security is hierbij een onderwerp dat de nodige aandacht verdient.
               </p>
               <p>
-                Ten slotte bouwen we met de bouwstenen die je mee krijgt in de verschillende vakken aan een groot
-                project. We leren een groot probleem systematisch opsplitsen in deelproblemen, die we vervolgens 1 voor
+                Ten slotte bouwen we met de bouwstenen die je mee krijgt in de verschillende vakken een eigen <a href="ems.html">energiemanagementsysteem</a>. 
+                We leren een groot probleem systematisch opsplitsen in deelproblemen, die we vervolgens 1 voor
                 1 aanpakken en combineren tot een werkend geheel. Met Python en Bash maken we scripts waarmee we
                 systeembeheertaken automatiseren en data verzamelen. We gebruiken <abbr
                   title="Artificiële Intelligentie">AI</abbr> als assistent, waarbij we er over waken dat we goed het
-                overzicht bewaren. Wij zijn zelf de architect van ons project! Het pilootproject waarmee we dit jaar van
-                start gingen, was het opzetten van een eigen <a href="ems.html"><abbr title="Energy Managment System">EMS</abbr></a>.
+                overzicht bewaren. Wij zijn zelf de architect van ons project!
               </p>
             </div>
             <div class="img">
-              <img src="images/patchrack3.webp" alt="Aan het werk in de patchkast.">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/patchrack3.webp">
+                <img src="images/netwerken-small.webp" alt="Netwerken">
+              </picture>
             </div>
           </div>
         </article>
@@ -279,13 +280,16 @@
               </p>
             </div>
             <div class="img">
-              <img src="images/elektriciteit.webp" alt="no image yet">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/elektriciteit-big.webp">
+                <img src="images/elektriciteit-small.webp" alt="In het labo.">
+              </picture>
             </div>
           </div>
         </article>
 
         <article class="vak" id="automatisering">
-          <h3>Project engineering praktijk + stage</h3>
+          <h3>Project engineering praktijk</h3>
           <div class="txt-img" id="cont-aut">
             <div class="txt">
               <p>
@@ -297,16 +301,33 @@
                 we schrijven in python. Leerlingen met een passie voor industriële automatisering kunnen PLC-modules
                 integreren in hun <a href="eindproject.html">eindproject</a>.
               </p>
-              <p>
-                In 6ICT doe je praktische ervaring en soft skills op tijdens een 2 weken durende <strong>stage</strong>
-                in een bedrijf naar keuze.
-              </p>
             </div>
             <div class="img">
               <img src="images/siemenslogo.webp" alt="Eerste kennismaking met PLC's">
             </div>
           </div>
         </article>
+
+        <article class="vak" id="stage">
+          <h3>Stage</h3>
+          <div class="txt-img" id="cont-stage">
+            <div class="txt">
+              <p>
+                In zowel 5ICT als 6ICT loop je een <strong>stage</strong> van 2 weken in een bedrijf naar keuze. 
+                Het is enerzijds een gelegenheid waarbij je soft skills zoals communicatie, samenwerken en initiatief nemen ontwikkelt. 
+                Anderzijds is het een waardevolle kans om praktijkervaring op te doen in een echte werkomgeving.
+              </p>
+              <p>
+                Sommige leerlingen werken tijdens hun stage aan een project dat aansluit bij hun interessegebied, dit is ideaal voor leerlingen die willen verder studeren.
+                Leerlingen die liever meteen na 6ICT aan de slag gaan op de arbeidsmarkt, kunnen ervaring opdoen in een functie die hen aanspreekt en misschien zelfs waardevolle connecties leggen voor hun toekomstige carrière.
+              </p>
+            </div>
+            <div class="img">
+              <img src="images/stage.webp" alt="Stage">
+            </div>
+          </div>
+        </article>
+
       </section>
     </div>
 
@@ -328,7 +349,12 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 ICT @ ScheppersInstituut Wetteren</p>
+    <p>
+      &copy; 2026 ICT @ 
+      <a href="https://www.scheppers-wetteren.be/" target="_blank">
+        ScheppersInstituut Wetteren
+      </a>
+    </p>
   </footer>
 
   <script src="js/nav.js"></script>

@@ -240,6 +240,15 @@ footer {
   margin-top: auto;
 }
 
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
 /* Responsive */
 @media (max-width: 1200px) {
   .nav-container {
@@ -285,6 +294,7 @@ footer {
     position: absolute;
     top: 60px;
     left: 0;
+    gap: 0;
   }
 
   #nav-menu.active {
@@ -293,6 +303,18 @@ footer {
 
   #nav-menu li a {
     color: white;
+    width: 100%;
+    padding-left: 2rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+  }
+
+  #nav-menu li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  #nav-menu li:last-child {
+    border-bottom: none;
   }
 
   #hamburger {

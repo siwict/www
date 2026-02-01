@@ -58,6 +58,14 @@ div.img {
   width: 40%;
   order: 2;
 }
+#cont-stage .txt {
+  width: 61%;
+  order: 2;
+}
+#cont-stage .img {
+  width: 39%;
+  order: 1;
+}
 
 article[id] {
   scroll-margin-top: 67px; /* Height nav-bar if small logo */
