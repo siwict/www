@@ -60,7 +60,75 @@
         Dat maakt het extra motiverend.
       </p>
     </section>
-    
+
+    <section class="content">
+      <h2>Eindprojecten 2025-2026</h2>
+      <p>
+        Hier ontdek je de eindprojecten van onze huidige lichting leerlingen.
+        Klik op een project om naar de bijhorende website te gaan!
+        <br>
+        Houd er rekening mee dat deze websites nog in ontwikkeling zijn.
+      </p>
+    </section>
+
+    <section class="carousel">
+      <div class="splide" id="carousel2526">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <a href="https://2526alessandro.siwict.be" target="_blank">
+                <img src="images/2526alessandro.webp" alt="Serresturing">
+              </a>
+              <h3>Alessandro</h3>
+              <p>Serresturing</p>
+            </li>
+            <li class="splide__slide">
+              <a href="https://2526gilles.siwict.be" target="_blank">
+                <img src="images/2526gilles.webp" alt="DMX-lichtshow">
+              </a>
+              <h3>Gilles</h3>
+              <p>DMX-lichtshow</p>
+            </li>
+            <li class="splide__slide">
+              <a href="https://2526lander.siwict.be" target="_blank">
+                <img src="images/2526lander.webp" alt="Drone">
+              </a>
+              <h3>Lander</h3>
+              <p>Drone</p>
+            </li>
+            <li class="splide__slide">
+              <a href="https://2526louka.siwict.be" target="_blank">
+                <img src="images/2526louka.webp" alt="Robotmaaier">
+              </a>
+              <h3>Louka</h3>
+              <p>Robotmaaier</p>
+            </li>
+            <li class="splide__slide">
+              <a href="https://2526maurovh.siwict.be" target="_blank">
+                <img src="images/2526maurovh.webp" alt="Robotarm">
+              </a>
+              <h3>Mauro VH</h3>
+              <p>Robotarm</p>
+            </li>
+            <li class="splide__slide">
+              <a href="https://2526nathan.siwict.be" target="_blank">
+                <img src="images/2526nathan.webp" alt="Algencirculatie">
+              </a>
+              <h3>Nathan</h3>
+              <p>Algencirculatie</p>
+            </li>
+            <li class="splide__slide">
+              <a href="https://2526nio.siwict.be" target="_blank">
+                <img src="images/2526nio.webp" alt="Arcadekast">
+              </a>
+              <h3>Nio</h3>
+              <p>Arcadekast</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
     <section class="content">
       <h2>Eindprojecten 2024-2025</h2>
       <p>
@@ -70,40 +138,40 @@
     </section>
 
     <section class="carousel">
-      <div class="splide" id="project-carousel">
+      <div class="splide" id="carousel2425">
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
               <a href="https://2425arne.siwict.be" target="_blank">
-                <img src="images/1.webp" alt="Microbrouwerij">
+                <img src="images/2425arne.webp" alt="Microbrouwerij">
               </a>
               <h3>Arne</h3>
               <p>Microbrouwerij</p>
             </li>
             <li class="splide__slide">
               <a href="https://2425briek.siwict.be" target="_blank">
-                <img src="images/2.webp" alt="Alarmsysteem">
+                <img src="images/2425briek.webp" alt="Alarmsysteem">
               </a>
               <h3>Briek</h3>
               <p>Alarmsysteem</p>
             </li>
             <li class="splide__slide">
               <a href="https://2425jasper.siwict.be" target="_blank">
-                <img src="images/3.webp" alt="Robotarm">
+                <img src="images/2425jasper.webp" alt="Robotarm">
               </a>
               <h3>Jasper</h3>
               <p>Robotarm</p>
             </li>
             <li class="splide__slide">
               <a href="https://2425kobe.siwict.be" target="_blank">
-                <img src="images/4.webp" alt="CNC-machine">
+                <img src="images/2425kobe.webp" alt="CNC-machine">
               </a>
               <h3>Kobe</h3>
               <p>CNC-machine</p>
             </li>
             <li class="splide__slide">
               <a href="https://2425mathias.siwict.be" target="_blank">
-                <img src="images/5.webp" alt="Domoticasysteem">
+                <img src="images/2425mathias.webp" alt="Domoticasysteem">
               </a>
               <h3>Mathias</h3>
               <p>Domoticasysteem</p>
@@ -117,7 +185,7 @@
 
   <footer>
     <p>
-      &copy; 2026 ICT @ 
+      &copy; 2026 ICT @
       <a href="https://www.scheppers-wetteren.be/" target="_blank">
         ScheppersInstituut Wetteren
       </a>
@@ -131,7 +199,16 @@
   <!-- <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script> -->
   <script src="js/splide.min.js"></script>
   <script>
-    new Splide('#project-carousel', {
+    new Splide('#carousel2526', {
+      type      : 'loop',
+      perPage   : 1,
+      autoplay  : true,
+      interval  : 3000,
+      pauseOnHover: true,
+      arrows    : true,
+      pagination: true,
+    }).mount();
+    new Splide('#carousel2425', {
       type      : 'loop',
       perPage   : 1,
       autoplay  : true,
